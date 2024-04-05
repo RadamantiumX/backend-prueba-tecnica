@@ -6,7 +6,7 @@ import { corsMiddleware } from './src/middlewares/cors.js';
 
 
     const app = express();
-    
+    const PORT = process.env.PORT || 3000;
     app.use(bodyParser.urlencoded({extended:true}))
 
     app.use(bodyParser.json())
@@ -18,10 +18,9 @@ import { corsMiddleware } from './src/middlewares/cors.js';
 
     app.use('/mail', router)
     
-const PORT = process.env.PORT || 3000;
-app.listen(PORT,()=>{
-    console.log(`listening on port: http://localhost:${PORT}`)
-});
+
+   app.listen(PORT)
+   console.log(`Server listening on http://localhost:${PORT}`)
 
 export default app
 
