@@ -1,0 +1,18 @@
+### New Message
+POST http://localhost:4000/mail/message
+Content-Type: application/json
+
+{ 
+    "nombre": "nombre",
+    "apellido": "apellido",
+    "email": "user@example.com",
+    "profesion": "profesion",
+    "empresa": "empresa",
+    "pais": "pais"
+}
+
+
+
+### Get Articels
+GET https://newsdata.io/api/1/news?apikey=pub_414848babc4328aba1c010cf6a67483fc26c2&q=pizza
+Content-Type: application/json
