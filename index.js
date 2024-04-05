@@ -1,5 +1,4 @@
 import express from 'express';
-
 import bodyParser from 'body-parser';
 import router from './src/router/message.router.js';
 import { corsMiddleware } from './src/middlewares/cors.js';
